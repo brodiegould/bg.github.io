@@ -1,0 +1,267 @@
+/* HTML STYLES */
+a{
+  opacity: 0.3;
+  color: #ACB6C7;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: .4s;
+
+}
+
+a:hover{
+  color: #788E99;
+  opacity: 1;
+}
+
+a:active{
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #0F121E;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+ /* font-family: 'Merriweather', serif; */ /*kind of an ugly font tbh*/
+ font-family: 'Inconsolata', monospace;
+}
+
+h1, h2, h3 {
+/* font-family: 'Oswald', sans-serif; */
+font-family: 'Karla', sans-serif;
+text-transform: uppercase;
+color: #D4DBEC;
+letter-spacing: 0.5px;
+}
+
+hr {
+  margin: 20px 25% 0 25%;
+}
+
+/* Table Styling */
+table {
+    font-size: 15px;
+  table-layout:fixed;
+  width: 100%;
+}
+
+td, th {
+  padding: 5px;
+}
+
+
+
+/* CSS STYLES */
+
+/* Middle container styling */
+.body-text {
+  background-color: #181B27;
+  border-radius: 5px;
+  padding:20px;
+  position: relative;
+  margin: 5px auto;
+max-width: 650px;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Banner image */
+.banner-pic {
+  width: 90%;
+  margin: 0 5% 0.5% 5%;
+    border-radius: 3px;
+}
+
+.column-style {
+  padding: 20px 0;
+}
+
+.general-table tr:hover {
+background: #222E40;
+}
+.general-table{
+border-collapse: collapse;
+
+}
+
+.interests-container {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.interests-container:hover {
+  background: #c7cedf;
+  border-radius: 5px;
+}
+
+.interests-title {
+  text-align: center;
+  display: inline-block;
+  margin: 5.75px 0 5.75px 7px;
+}
+
+.interests-description {
+  text-align: center;
+  display: inline-block;
+  margin: 5.75px 25%;
+}
+
+.interests-badge {
+  text-align: center;
+  border-radius: 3px;
+  float: right;
+  vertical-align: middle;
+  min-width: 90px;
+  margin: 2.75px 7px 2.75px 0;
+  padding: 3px 10px;
+}
+
+/* Button Labelling */
+.label {
+  text-align: center;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+/* Quick links to twitter etc. styling */
+#quick-links-container p{
+  line-height: 2;
+}
+
+#links-container{
+  position: absolute;
+    top: 10%;
+    right: 0;
+    width: 20%;
+    min-width:80px;
+  display:grid;
+float: right;
+padding: 25px;
+}
+#links-text{
+width:75%;
+left:0;
+}
+
+
+.links-inner{
+  color: white;
+  margin: 0 0 25px 0;
+min-width:120px;
+
+}
+
+.projects-table td:nth-child(3) {
+  text-align: end;
+  width:auto;
+  position:absolute;
+  right:25px;
+}
+
+/* Style for body columns */
+.reading {
+  background-color: #ff9800;
+}/* Orange */
+
+.done {
+  background-color: #04AA6D;
+}/* Green */
+.active {
+  background-color: #04AA6D;
+}/* Green */
+
+.to-read {
+  background-color: #2196F3;
+}/* Blue */
+
+.read {
+  background-color: #f44336;
+}/* Red */
+.not-active {
+  background-color: #f44336;
+}/* Red */
+
+
+.reading-table td:hover{
+  background: #222E40;
+}
+
+.reading-table-row p{
+  margin: 5px 0;
+  text-align: left;
+  text-justify: none;
+}
+.reading-table-row tr{
+padding-bottom: 20px;
+}
+
+.square-button {
+  opacity: 1;
+    display: block;
+    text-decoration: none;
+    color: #788E99;
+  border:1px solid #788E99;
+    border-radius: 3px;
+    transition: .4s;
+    text-align: center;
+    min-width: 90px;
+    margin: 2.75px 7px 2.75px 0;
+    padding: 3px 10px;
+}
+
+.square-button:hover {
+    background: #788E99;
+    color: white;
+}
+
+/* Side bar styling */
+.side-bar-container {
+  min-width: 14%;
+  position: -webkit-sticky;
+  /* for Safari users */
+  position: sticky;
+  top: 40%;
+  right:2%;
+  float: right;
+}
+.side-bar-container ul{
+  padding-inline-start: 0;
+}
+
+.side-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: right;
+  text-decoration: none;
+}
+
+.side-bar li {
+  color: #c7cedf;
+  list-style-type: none;
+  margin: 0 0 5px 0;
+  min-width: 150px;
+  max-width: 150px;
+}
+
+/* Top cotainer for landing image */
+.top-container {
+  position: relative;
+}
+
+.table-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+#table-interests td:nth-child(2) {
+  text-align: end;
+}
+
+.table-interersts td:nth-child(3) {
+  width: auto;
+}
