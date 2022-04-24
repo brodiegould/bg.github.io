@@ -34,6 +34,7 @@ h1, h2, h3 {
 font-family: 'Karla', sans-serif;
 text-transform: uppercase;
 color: #D4DBEC;
+margin: 10px auto;
 letter-spacing: 0.5px;
 }
 
@@ -52,8 +53,6 @@ td, th {
   padding: 5px;
 }
 
-
-
 /* CSS STYLES */
 
 /* Middle container styling */
@@ -62,7 +61,7 @@ td, th {
   border-radius: 5px;
   padding:20px;
   position: relative;
-  margin: 5px auto;
+  margin: 1% auto;
 max-width: 650px;
   line-height: 1.5;
   text-align: justify;
@@ -75,7 +74,14 @@ max-width: 650px;
   margin: 0 5% 0.5% 5%;
     border-radius: 3px;
 }
-
+.inline-pic {
+  width: 95%;
+  margin: 2%;
+    border-radius: 3px;
+}
+.block-words{
+  padding: 3%;
+}
 .column-style {
   padding: 20px 0;
 }
@@ -132,9 +138,9 @@ border-collapse: collapse;
   line-height: 2;
 }
 
-#links-container{
+.links-container{
   position: absolute;
-    top: 10%;
+
     right: 0;
     width: 20%;
     min-width:80px;
@@ -142,11 +148,21 @@ border-collapse: collapse;
 float: right;
 padding: 25px;
 }
-#links-text{
+
+#links-container1{
+      top: 5%;
+}
+#links-container2{
+  top: 15.5%;
+}
+#links-container3{
+  top: 13%;
+}
+
+.links-text{
 width:75%;
 left:0;
 }
-
 
 .links-inner{
   color: white;
@@ -160,6 +176,10 @@ min-width:120px;
   width:auto;
   position:absolute;
   right:25px;
+}
+
+projects-table td:nth-child(2){
+max-width: 20%;
 }
 
 /* Style for body columns */
@@ -228,6 +248,7 @@ padding-bottom: 20px;
   right:2%;
   float: right;
 }
+
 .side-bar-container ul{
   padding-inline-start: 0;
 }
@@ -242,11 +263,13 @@ padding-bottom: 20px;
 .side-bar li {
   color: #c7cedf;
   list-style-type: none;
+  text-transform: uppercase;
   margin: 0 0 5px 0;
-  min-width: 150px;
+  /* min-width: 150px; */
   max-width: 150px;
 }
 
+}
 /* Top cotainer for landing image */
 .top-container {
   position: relative;
@@ -264,4 +287,66 @@ padding-bottom: 20px;
 
 .table-interersts td:nth-child(3) {
   width: auto;
+}
+@media(max-width:1000px){
+  .side-bar li{
+  display:none;
+}
+
+/* Fix this later to account for my projects tab when scaled for mobile */
+@media screen and (max-width:500px) {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	tr { border: 1px solid #ccc; }
+
+  td{
+    word-wrap: break-word;
+    border-right:  1px solid;
+    max-width: 33%;
+  }
+
+.interests-badge{
+  min-width: auto;
+}
+.full-hr{
+  display:none;
+}
+
+}
+
+@media screen and (max-width:360px){
+  .links-text{
+  width:65%;
+  left:0;
+}
+@media screen and (max-width:360px){
+  .inline-pic{
+  width:145%;
+}
+
+@media screen and (max-width:360px){
+  .links-container{
+padding: 0;
+width:auto;
+font-size: 12px;
+}
+#links-container1{
+  top:30%;
+}
+ #links-container2{
+   top:26%;
+ }
+ #links-container3{
+   top:27%;
+ }
 }
