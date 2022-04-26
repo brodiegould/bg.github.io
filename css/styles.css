@@ -1,19 +1,18 @@
 /* HTML STYLES */
-a{
+a {
   opacity: 0.3;
   color: #ACB6C7;
   text-decoration: none;
   letter-spacing: 2px;
   transition: .4s;
-
 }
 
-a:hover{
+a:hover {
   color: #788E99;
   opacity: 1;
 }
 
-a:active{
+a:active {
   text-decoration: none;
   color: white;
   opacity: 1;
@@ -25,17 +24,18 @@ body {
   text-align: center;
   color: white;
   font-size: 16px;
- /* font-family: 'Merriweather', serif; */ /*kind of an ugly font tbh*/
- font-family: 'Inconsolata', monospace;
+  /* font-family: 'Merriweather', serif; */
+  /*kind of an ugly font tbh*/
+  font-family: 'Inconsolata', monospace;
 }
 
 h1, h2, h3 {
-/* font-family: 'Oswald', sans-serif; */
-font-family: 'Karla', sans-serif;
-text-transform: uppercase;
-color: #D4DBEC;
-margin: 10px auto;
-letter-spacing: 0.5px;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Karla', sans-serif;
+  text-transform: uppercase;
+  color: #D4DBEC;
+  margin: 10px auto;
+  letter-spacing: 0.5px;
 }
 
 hr {
@@ -44,8 +44,8 @@ hr {
 
 /* Table Styling */
 table {
-    font-size: 15px;
-  table-layout:fixed;
+  font-size: 15px;
+  table-layout: fixed;
   width: 100%;
 }
 
@@ -54,15 +54,14 @@ td, th {
 }
 
 /* CSS STYLES */
-
 /* Middle container styling */
 .body-text {
   background-color: #181B27;
   border-radius: 5px;
-  padding:20px;
+  padding: 20px;
   position: relative;
   margin: 1% auto;
-max-width: 650px;
+  max-width: 650px;
   line-height: 1.5;
   text-align: justify;
   text-justify: inter-word;
@@ -72,26 +71,29 @@ max-width: 650px;
 .banner-pic {
   width: 90%;
   margin: 0 5% 0.5% 5%;
-    border-radius: 3px;
+  border-radius: 3px;
 }
+
 .inline-pic {
   width: 95%;
   margin: 2%;
-    border-radius: 3px;
+  border-radius: 3px;
 }
-.block-words{
+
+.block-words {
   padding: 3%;
 }
+
 .column-style {
   padding: 20px 0;
 }
 
 .general-table tr:hover {
-background: #222E40;
+  background: #222E40;
 }
-.general-table{
-border-collapse: collapse;
 
+.general-table {
+  border-collapse: collapse;
 }
 
 .interests-container {
@@ -134,122 +136,137 @@ border-collapse: collapse;
 }
 
 /* Quick links to twitter etc. styling */
-#quick-links-container p{
+#quick-links-container p {
   line-height: 2;
 }
 
-.links-container{
+.links-container {
   position: absolute;
-
-    right: 0;
-    width: 20%;
-    min-width:80px;
-  display:grid;
-float: right;
-padding: 25px;
+  right: 0;
+  width: 20%;
+  min-width: 80px;
+  display: grid;
+  float: right;
+  padding: 3%;
 }
 
-#links-container1{
-      top: 5%;
+#links-container1 {
+  top: 25%;
 }
-#links-container2{
+
+#links-container2 {
   top: 15.5%;
 }
-#links-container3{
+
+#links-container3 {
   top: 13%;
 }
 
-.links-text{
-width:75%;
-left:0;
+.links-text {
+  width: 75%;
+  left: 0;
 }
 
-.links-inner{
+.links-inner {
   color: white;
-  margin: 0 0 25px 0;
-min-width:120px;
-
+  margin-bottom: 20%;
+  min-width: 120px;
 }
 
 .projects-table td:nth-child(3) {
   text-align: end;
-  width:auto;
-  position:absolute;
-  right:25px;
+  width: auto;
+  position: absolute;
+  right: 25px;
 }
 
-projects-table td:nth-child(2){
-max-width: 20%;
+projects-table td:nth-child(2) {
+  max-width: 20%;
+}
+
+.resume{
+  opacity: 0.7;
+  color: #04AA6D;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: .4s;
 }
 
 /* Style for body columns */
 .reading {
   background-color: #ff9800;
-}/* Orange */
+}
 
+/* Orange */
 .done {
   background-color: #04AA6D;
-}/* Green */
+}
+
+/* Green */
 .active {
   background-color: #04AA6D;
-}/* Green */
+}
 
+/* Green */
 .to-read {
   background-color: #2196F3;
-}/* Blue */
+}
 
+/* Blue */
 .read {
   background-color: #f44336;
-}/* Red */
+}
+
+/* Red */
 .not-active {
   background-color: #f44336;
-}/* Red */
+}
 
-
-.reading-table td:hover{
+/* Red */
+.reading-table td:hover {
   background: #222E40;
 }
 
-.reading-table-row p{
+.reading-table-row p {
   margin: 5px 0;
   text-align: left;
   text-justify: none;
 }
-.reading-table-row tr{
-padding-bottom: 20px;
+
+.reading-table-row tr {
+  padding-bottom: 20px;
 }
 
 .square-button {
   opacity: 1;
-    display: block;
-    text-decoration: none;
-    color: #788E99;
-  border:1px solid #788E99;
-    border-radius: 3px;
-    transition: .4s;
-    text-align: center;
-    min-width: 90px;
-    margin: 2.75px 7px 2.75px 0;
-    padding: 3px 10px;
+  display: block;
+  text-decoration: none;
+  color: #788E99;
+  border: 1px solid #788E99;
+  border-radius: 3px;
+  transition: .4s;
+  text-align: center;
+  min-width: 90px;
+  margin: 2.75px 7px 2.75px 0;
+  padding: 3px 10px;
 }
 
 .square-button:hover {
-    background: #788E99;
-    color: white;
+  background: #788E99;
+  color: white;
 }
 
-/* Side bar styling */
 .side-bar-container {
   min-width: 14%;
   position: -webkit-sticky;
   /* for Safari users */
   position: sticky;
   top: 40%;
-  right:2%;
+  right: 2%;
   float: right;
 }
 
-.side-bar-container ul{
+.side-bar-container ul {
   padding-inline-start: 0;
 }
 
@@ -265,11 +282,9 @@ padding-bottom: 20px;
   list-style-type: none;
   text-transform: uppercase;
   margin: 0 0 5px 0;
-  /* min-width: 150px; */
   max-width: 150px;
 }
 
-}
 /* Top cotainer for landing image */
 .top-container {
   position: relative;
@@ -288,65 +303,98 @@ padding-bottom: 20px;
 .table-interersts td:nth-child(3) {
   width: auto;
 }
-@media(max-width:1000px){
-  .side-bar li{
-  display:none;
+
+@media(max-width:1000px) {
+  .side-bar li {
+    display: none;
+  }
+
+  .links-inner {
+    margin-bottom: 10%;
+  }
 }
 
-/* Fix this later to account for my projects tab when scaled for mobile */
+@media screen and (min-width:1001px) {
+
+  /* when the sidebar first dissapears */
+  #resume-link {
+    display: none;
+  }
+
+  #links-container1 {
+    top: 15%;
+  }
+}
+
+/* Settings to display tables on mobile */
 @media screen and (max-width:500px) {
 
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, tr {
-		display: block;
-	}
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, tr {
+    display: block;
+  }
 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	tr { border: 1px solid #ccc; }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
 
-  td{
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
     word-wrap: break-word;
-    border-right:  1px solid;
+    border-right: 1px solid;
     max-width: 33%;
   }
 
-.interests-badge{
-  min-width: auto;
-}
-.full-hr{
-  display:none;
+  .interests-badge {
+    min-width: auto;
+  }
+
+  .full-hr {
+    display: none;
+  }
 }
 
+@media screen and (max-width:360px) {
+
+  /* for mobile screens */
+  .links-text {
+    width: 65%;
+    left: 0;
+  }
 }
 
-@media screen and (max-width:360px){
-  .links-text{
-  width:65%;
-  left:0;
-}
-@media screen and (max-width:360px){
-  .inline-pic{
-  width:145%;
+@media screen and (max-width:360px) {
+
+  /* for mobile screens */
+  .inline-pic {
+    width: 145%;
+  }
 }
 
-@media screen and (max-width:360px){
-  .links-container{
-padding: 0;
-width:auto;
-font-size: 12px;
-}
-#links-container1{
-  top:30%;
-}
- #links-container2{
-   top:26%;
- }
- #links-container3{
-   top:27%;
- }
+@media screen and (max-width:360px) {
+
+  /* for mobile screens */
+  .links-container {
+    padding: 0;
+    width: auto;
+    font-size: 12px;
+  }
+
+  #links-container1 {
+    top: 20%;
+  }
+
+  #links-container2 {
+    top: 26%;
+  }
+
+  #links-container3 {
+    top: 27%;
+  }
 }

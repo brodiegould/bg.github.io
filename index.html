@@ -17,7 +17,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cadb263b0f.js" crossorigin="anonymous"></script>
 
-
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,6 +49,7 @@
           <li><a href="#education">education</a></li>
           <li><a href="#experience">experience</a></li>
           <li><a href="#reading-list">reading list</a></li>
+          <li><b><u><a class="resume" href="docs/resume.pdf" target="_blank">resume</a></u></b></li>
         </ul>
       </div>
     </div>
@@ -72,8 +72,8 @@
             <div class="links-inner">
               <a class="square-button" href="mailto:abrodieg@gmail.com?subject=%20Good News Brodie, You're Hired!"><i class="fa-solid fa-envelope "></i> <b>Email</b></a>
             </div>
-            <div class="links-inner">
-              <a class="square-button" href=""><i class="fa-solid fa-envelope "></i> <b>Resume</b></a>
+            <div id="resume-link" class="links-inner">
+              <a class="square-button" href="docs/resume.pdf" target="_blank"><i class="fa-solid fa-file-lines "></i> <b>Resume</b></a>
             </div>
           </div>
         </div>
@@ -90,16 +90,17 @@
           <td><span class="interests-badge active">Active</span></td>
         </tr>
         <tr>
-          <td>Programming</td>
-          <td>Python, HTML, CSS, Javascript, Bootstrap</td>
-          <td><span class="interests-badge active">Active</span></td>
+        </tr>
+        <td>Programming</td>
+        <td>Python, HTML, CSS, Javascript, jQuery</td>
+        <td><span class="interests-badge active">Active</span></td>
         </tr>
         <td>Finance</td>
         <td>University of Victoria Investment Group</td>
         <td><span class="interests-badge active">Active</span></td>
         </tr>
         <td>Reading</td>
-        <td>the Psychology of Money / Cracking the Coding Interview</td>
+        <td>the Basics of Bitcoin and Blockchains / Cracking the Coding Interview</td>
         <td><span class="interests-badge active">Active</span></td>
         </tr>
         <td>Bouldering</td>
@@ -118,7 +119,7 @@
         <td>Python, Tensorflow</td>
         <td><span class="interests-badge not-active">Up Next</span></td>
         </tr>
-      </tr>
+        </tr>
 
       </table>
     </div>
@@ -132,11 +133,11 @@
           <img class="inline-pic" src="photos/cryptography.png" alt="Cryptography">
           <h4><u>Applied Cryptography Differential Crypyanalysis Attack</u></h4>
           <p>University of Victoria's Applied Cryptography class has a final project where students can choose to explore the study or attacks of common cryprographic ciphers.
-          My partner and I chose to implement a differntial cryptanalysis attack on a semi-trivial 4 block SPN cipher. The objective is to use cryptanalysis to recover parts of the secret key.
-        the method of differential cryptanalysis uses probability to find the most likely difference pairs which work regardless of what the random keys are. First, my partner and I constructed a 4 block cipher with randomly generated keys.
-        We then built a program that explored every possible input text to find the best case path through the cipher that uses the smallest amount of S-Boxes. We then built a probability
-        table for any cipher of this form, showing the highest likelihood exploits. Finally, to attack we work down through the first 4 rounds of the cipher, as well as work backwards through the last SPN block to exploit the key.
-        From this, we were able to find a general solution that recovers the 5th round key, deeming the cipher broken.</p>
+            My partner and I chose to implement a differntial cryptanalysis attack on a semi-trivial 4 block SPN cipher. The objective is to use cryptanalysis to recover parts of the secret key.
+            the method of differential cryptanalysis uses probability to find the most likely difference pairs which work regardless of what the random keys are. First, my partner and I constructed a 4 block cipher with randomly generated keys.
+            We then built a program that explored every possible input text to find the best case path through the cipher that uses the smallest amount of S-Boxes. We then built a probability
+            table for any cipher of this form, showing the highest likelihood exploits. Finally, to attack we work down through the first 4 rounds of the cipher, as well as work backwards through the last SPN block to exploit the key.
+            From this, we were able to find a general solution that recovers the 5th round key, deeming the cipher broken.</p>
           <div class="links-container" id="links-container2">
             <div class="">
               <div class="links-inner">
@@ -161,8 +162,10 @@
           <h4><u>Mechatronics Sorting Project</u></h4>
           <img class="inline-pic" src="photos/mechatronics.png" alt="mechatronics">
           <p>University of Victoria's Mechatronics class has a final competitive project where students write embedded C programming to run an assembly line process to sort 4 types of clindrical parts.
-            The project utilized optical, ferromagnetic and reflective sensors to detect and classify parts. The system also uses a DC motor to control the coveyor belt, and a stepper motor
-            to rotate the sorting bins. I wrote the program to run the system efficiently, and my partner looked after the hardware interfacing to each part. Through testing we were able to successfully
+            The projects objective is to drop parts in their sort bins (disregarding if they bounce/move) as quickly as possible.
+            The system utilized optical, ferromagnetic and reflective sensors to detect and classify parts.
+            The system also uses a DC motor to control the coveyor belt, and a stepper motor to rotate the sorting bins.
+            I wrote the program to run the system efficiently, and my partner looked after the hardware interfacing to each part. Through testing we were able to successfully
             sort all 48 parts in 32 seconds, which would place us in the top 3 teams for run time. </p>
           <div class="links-container" id="links-container3">
             <div class="">
@@ -208,11 +211,12 @@
         <h3>Summary of Past Work Experience</h3>
         <ul>
           <li><b><u>Engineering - Consulting</u></b><br>
-            consulting experience creating design drawings and project documents to direct contractors through construction in Vancouvers ports, pumpstations, energy recycling and water services industry. Help organizations bid on projects and analyze costs in a project management domain</span></li>
+            consulting experience creating design drawings and project documents to direct contractors through construction in Vancouvers ports, pumpstations, energy recycling and water services industry. Help organizations bid on projects and
+            analyze costs in a project management domain</span></li>
           <li><b><u>Engineering - Manufacturing</u></b><br>
             automation experience covering PLC programming, robotics programming, sensing systems and control schemes </li>
           <li><b><u>Engineering - Hands on</u></b><br>
-            new building construction, automotive repairs and residential / commercial electrical works, panel construction </li>
+            new building construction, automotive repairs, panel construction and residential / commercial electrical works </li>
           <li><b><u>Engineering - Design </u></b><br>
             create instruction CAD drawings from site plans to full detail and specs, create automation projects, and panel designs </li>
           <li><b><u>Servies</u></b><br>
@@ -243,22 +247,22 @@
             <p>by Anthony Lewis</p>
             <span class="interests-badge reading">Reading</span>
           </td>
-          <tr class="reading-table-row">
-            <td>
-              <p><b><u>Cracking the Coding Interview: Data Structures and Algorithms</u></b></p>
-              <p>by Gayle Laakmann McDowell</p>
-              <span class="interests-badge reading">Reading</span>
-            </td>
-            <td>
-              <p><b><u>How to Fail at Almost Everything and Still Win Big</u></b></p>
-              <p>by Scott Adams</p>
-              <span class="interests-badge read">Read</span>
-            </td>
-            <td>
-              <p><b><u>The Psychology of Money</u></b></p>
-              <p>by Morgan Housel</p>
-              <span class="interests-badge read">Read</span>
-            </td>
+        <tr class="reading-table-row">
+          <td>
+            <p><b><u>Cracking the Coding Interview: Data Structures and Algorithms</u></b></p>
+            <p>by Gayle Laakmann McDowell</p>
+            <span class="interests-badge reading">Reading</span>
+          </td>
+          <td>
+            <p><b><u>How to Fail at Almost Everything and Still Win Big</u></b></p>
+            <p>by Scott Adams</p>
+            <span class="interests-badge read">Read</span>
+          </td>
+          <td>
+            <p><b><u>The Psychology of Money</u></b></p>
+            <p>by Morgan Housel</p>
+            <span class="interests-badge read">Read</span>
+          </td>
           <!-- New Table Row -->
         <tr class="reading-table-row">
           <td>
@@ -330,12 +334,27 @@
             <span class="interests-badge read">Read</span>
           </td>
         </tr>
+        <!-- New Table Row -->
+        <tr class="reading-table-row">
+          <td>
+            <p><b><u>Modern Fundamentals of Golf</u></b></p>
+            <p>by Ben Hogan</p>
+            <span class="interests-badge read">Read</span>
+          </td>
+          <td>
+            <p><b><u>Losing my Virginity</u></b></p>
+            <p>by Richard Branson</p>
+            <span class="interests-badge read">Read</span>
+          </td>
+          <td>
+            <p><b><u>12 Rules for Life</u></b></p>
+            <p>by Jordan Peterson</p>
+            <span class="interests-badge read">Read</span>
+          </td>
+        </tr>
       </table>
 
     </div>
-
-
-
 
   </div>
 </body>
