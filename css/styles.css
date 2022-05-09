@@ -63,8 +63,11 @@ td, th {
   margin: 1% auto;
   max-width: 650px;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
   text-justify: inter-word;
+}
+.justify{
+  text-align:justify;
 }
 
 /* Banner image */
@@ -136,7 +139,7 @@ td, th {
 }
 
 /* Quick links to twitter etc. styling */
-#quick-links-container p {
+.quick-links-container p {
   line-height: 2;
 }
 
@@ -151,7 +154,7 @@ td, th {
 }
 
 #links-container1 {
-  top: 25%;
+  top: 15%;
 }
 
 #links-container2 {
@@ -315,14 +318,9 @@ projects-table td:nth-child(2) {
 }
 
 @media screen and (min-width:1001px) {
-
   /* when the sidebar first dissapears */
   #resume-link {
     display: none;
-  }
-
-  #links-container1 {
-    top: 15%;
   }
 }
 
