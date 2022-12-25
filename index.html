@@ -20,7 +20,9 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla:wght@600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla:wght@600&family=Oswald:wght@700&display=swap"
+    rel="stylesheet">
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -59,21 +61,26 @@
       <div id="quick-links-container">
         <div class="links-text">
           <p>I'm a 4th-year Electrical Engineering Student at the University of Victoria.
-            When I'm not actively studying in class, you can find me doing online programming courses, outdoors hiking and biking, reading, playing sports or listening to podcasts.</p>
+            When I'm not actively studying in class, you can find me doing online programming courses, outdoors hiking
+            and biking, reading, playing sports or listening to podcasts.</p>
         </div>
         <div class="links-container" id="links-container1">
           <div class="web-link">
             <div class="links-inner">
-              <a class="square-button" href="https://www.linkedin.com/in/brodie-gould/"><i class="fa-brands fa-linkedin "></i> <b>LinkedIn</b></a>
+              <a class="square-button" href="https://www.linkedin.com/in/brodie-gould/"><i
+                  class="fa-brands fa-linkedin "></i> <b>LinkedIn</b></a>
             </div>
             <div class="links-inner">
-              <a class="square-button" href="https://github.com/brodiegould"><i class="fa-brands fa-github "></i> <b>Github</b></a>
+              <a class="square-button" href="https://github.com/brodiegould"><i class="fa-brands fa-github "></i>
+                <b>Github</b></a>
             </div>
             <div class="links-inner">
-              <a class="square-button" href="mailto:abrodieg@gmail.com?subject=%20Good News Brodie, You're Hired!"><i class="fa-solid fa-envelope "></i> <b>Email</b></a>
+              <a class="square-button" href="mailto:abrodieg@gmail.com?subject=%20Good News Brodie, You're Hired!"><i
+                  class="fa-solid fa-envelope "></i> <b>Email</b></a>
             </div>
             <div id="resume-link" class="links-inner">
-              <a class="square-button" href="docs/resume.pdf" target="_blank"><i class="fa-solid fa-file-lines "></i> <b>Resume</b></a>
+              <a class="square-button" href="docs/resume.pdf" target="_blank"><i class="fa-solid fa-file-lines "></i>
+                <b>Resume</b></a>
             </div>
           </div>
         </div>
@@ -90,287 +97,382 @@
           <td><span class="interests-badge active">Active</span></td>
         </tr>
         <tr>
+          <td>Part Time Work: Government of Canada</td>
+          <td> Cybersecurity / Software Supply Chain R&D</td>
+          <td><span class="interests-badge active">Active</span></td>
+        </tr>
+        <tr>
           <td>Programming</td>
-          <td>C++, Python, HTML, CSS</td>
+          <td>Python, JavaScript, HTML, CSS, Docker, AWS</td>
           <td><span class="interests-badge active">Active</span></td>
         </tr>
         <tr>
           <td>Clubs</td>
-          <td>University of Victoria Competitive Programming Club, Investment Group, and Blockchain Club</td>
+          <td>University of Victoria Investment Group, and Blockchain Club</td>
           <td><span class="interests-badge active">Active</span></td>
         </tr>
         <tr>
           <td>Reading</td>
-          <td>the Basics of Bitcoin and Blockchains / Cracking the Coding Interview</td>
+          <td>Factfulness</td>
           <td><span class="interests-badge active">Active</span></td>
         </tr>
         <tr>
           <td>Bouldering</td>
-          <td>Rec: Summer Season</td>
+          <td>Rec: Spring Term</td>
           <td><span class="interests-badge active">Active</span></td>
         </tr>
-          <td>Mechatronics Project</td>
-          <td>Automated Planter System</td>
-          <td><span class="interests-badge active">Active</span></td>
+        <td>Real Estate Dashboard</td>
+        <td>Canada Wide Cashflow Analyzer</td>
+        <td><span class="interests-badge active">Active</span></td>
         </tr>
-        <tr>
-          <td>Capstone Project</td>
-          <td>eCigarette Quitting Device: Flutter, embedded C</td>
-          <td><span class="interests-badge active">Active</span></td>
-        </tr>
-        <tr>
-          <td>Blockchain Development</td>
-          <td>Solidity, Ether.js</td>
-          <td><span class="interests-badge not-active">Up Next</span></td>
-        </tr>
-        <tr>
-          <td>Artificial Intelligence</td>
-          <td>Python, Tensorflow</td>
-          <td><span class="interests-badge not-active">Up Next</span></td>
-        </tr>
-        <tr>
-          <td>Advanced Computing Project</td>
-          <td>C++</td>
-          <td><span class="interests-badge not-active">Up Next</span></td>
-        </tr>
-        
-
       </table>
     </div>
+
+
     <div class="body-text" id="projects">
       <div class="quick-links-container">
         <h2><i class="fa-solid fa-list-check"></i><span> Projects.</span></h2>
         <p>Here is a non-inclusive list of some of the past projects I have worked on</p>
-        <!-- PYTHON -->
+
+        <!-- SOLIDITY LIST -->
         <div class="justify links-text">
-          <h3>Python Projects</h3>
-          <img class="inline-pic" src="photos/cryptography.png" alt="Cryptography">
-          <h4><u>Applied Cryptography Differential Crypyanalysis Attack</u></h4>
-          <p>University of Victoria's Applied Cryptography class has a final project where students can choose to explore the study or attacks of common cryprographic ciphers.
-            My partner and I chose to implement a differntial cryptanalysis attack on a semi-trivial 4 block SPN cipher. The objective is to use cryptanalysis to recover parts of the secret key.
-            the method of differential cryptanalysis uses probability to find the most likely difference pairs which work regardless of what the random keys are. First, my partner and I constructed a 4 block cipher with randomly generated keys.
-            We then built a program that explored every possible input text to find the best case path through the cipher that uses the smallest amount of S-Boxes. We then built a probability
-            table for any cipher of this form, showing the highest likelihood exploits. Finally, to attack we work down through the first 4 rounds of the cipher, as well as work backwards through the last SPN block to exploit the key.
-            From this, we were able to find a general solution that recovers the 5th round key, deeming the cipher broken.</p>
-          <div class="links-container" id="links-container2">
-            <div class="">
-              <div class="links-inner">
-                <a href="https://github.com/brodiegould/Applied-Cryptography-Differential-Cryptanalysis" class="square-button"><i class="fa-brands fa-github"></i> Code</a>
-              </div>
-              <div class="links-inner">
-                <a href="https://www.engr.mun.ca/~howard/PAPERS/ldc_tutorial.pdf" class="square-button"><i class="fa-brands fa-book"></i> Research</a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="body-text" id="projects">
-      <div class="quick-links-container">
-        <!-- C LIST -->
-        <div class="justify links-text">
-          <h3>C Projects</h3>
-          <h4><u>Mechatronics Sorting Project</u></h4>
-          <img class="inline-pic" src="photos/mechatronics.png" alt="mechatronics">
-          <p>University of Victoria's Mechatronics class has a final competitive project where students write embedded C programming to run an assembly line process to sort 4 types of cylindrical parts.
-            The project's objective is to drop parts in their sort bins (disregarding if they bounce/move) as quickly as possible.
-            The system utilized optical, ferromagnetic and reflective sensors to detect and classify parts.
-            The system also uses a DC motor to control the conveyor belt, and a stepper motor to rotate the sorting bins.
-            I wrote the program to run the system efficiently, and my partner looked after the hardware interfacing to each part. Through testing, we were able to successfully
-            sort all 48 parts in 32 seconds, which would place us in the top 3 teams for run time.</p>
+          <h3>Solidity Projects</h3>
+          <h4><u>Sealed Envelope Auction Smart Contract</u></h4>
+          <img class="inline-pic" src="photos/solidity-auction.png" alt="smart contract">
+          <p>University of Victoria's Blockchain class has a final project where students can choose to create smart
+            contracts that tackle financial applications.
+            I decided to create a smart contract that mimics a <a
+              href="https://www.investopedia.com/terms/s/sealed-bid-auction.asp"> sealed bid auction.</a>
+            The objective is for bidders to deposit anonymous bids to the contract that only get revealed when the
+            auction is over.
+            This uses the Keccak256 hash algorithm to create privacy around bids on an otherwise public blockchain.
+            I wrote the program to have a separate function to seal bids on the EVM, where the final bids are only exposed at the auction revealing period.
+            The project exceeded PhD student markers expectations, yielding a 100% final mark.
+          </p>
           <div class="links-container" id="links-container3">
             <div class="">
               <div class="links-inner">
-                <a href="https://github.com/brodiegould/Embedded-Sorting-Project" class="square-button"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="https://github.com/brodiegould/Blind-Auction-Smart-Contract" class="square-button"><i class="fa-brands fa-github"></i>
+                  Code</a>
               </div>
               <div class="links-inner">
-                <a href="https://www.youtube.com/shorts/50-gHRf9Evg?&ab_channel=BrodieGould" class="square-button"><i class="fa-brands fa-youtube"></i> Video 1</a>
-              </div>
-              <div class="links-inner">
-                <a href="https://www.youtube.com/watch?v=uYpI9D8bxk8&ab_channel=BrodieGould" class="square-button"><i class="fa-brands fa-youtube"></i> Video 2</a>
+                <a href="https://www.youtube.com/watch?v=TZ0X9yU5xdc&t=2s&ab_channel=BrodieGould" class="square-button"><i class="fa-brands fa-youtube"></i>Video</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
+      <div class="body-text" id="projects">
+        <div class="quick-links-container">
+          <!-- PYTHON -->
+          <div class="justify links-text">
+            <h3>Python Projects</h3>
+            <h4><u>Applied Cryptography Differential Crypyanalysis Attack</u></h4>
+            <img class="inline-pic" src="photos/cryptography.png" alt="Cryptography">
+            <p>University of Victoria's Applied Cryptography class has a final project where students can choose to
+              explore the study or attacks of common cryprographic ciphers.
+              My partner and I chose to implement a differntial cryptanalysis attack on a semi-trivial 4 block SPN
+              cipher.
+              The objective is to use cryptanalysis to recover parts of the secret key.
+              the method of differential cryptanalysis uses probability to find the most likely difference pairs which
+              work regardless of what the random keys are. First, my partner and I constructed a 4 block cipher with
+              randomly generated keys.
+              We then built a program that explored every possible input text to find the best case path through the
+              cipher that uses the smallest amount of S-Boxes. We then built a probability
+              table for any cipher of this form, showing the highest likelihood exploits. Finally, to attack we work
+              down
+              through the first 4 rounds of the cipher, as well as work backwards through the last SPN block to exploit
+              the key.
+              From this, we were able to find a general solution that recovers the 5th round key, deeming the cipher
+              broken.</p>
+            <div class="links-container" id="links-container2">
+              <div class="">
+                <div class="links-inner">
+                  <a href="https://github.com/brodiegould/Applied-Cryptography-Differential-Cryptanalysis"
+                    class="square-button"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+                <div class="links-inner">
+                  <a href="https://www.engr.mun.ca/~howard/PAPERS/ldc_tutorial.pdf" class="square-button"><i
+                      class="fa-brands fa-book"></i> Research</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="body-text" id="projects">
+        <div class="quick-links-container">
+          <!-- C LIST -->
+          <div class="justify links-text">
+            <h3>C Projects</h3>
+            <h4><u>Mechatronics Sorting Project</u></h4>
+            <img class="inline-pic" src="photos/mechatronics.png" alt="mechatronics">
+            <p>University of Victoria's Mechatronics class has a final competitive project where students write embedded
+              C
+              programming to run an assembly line process to sort 4 types of cylindrical parts.
+              The project's objective is to drop parts in their sort bins (disregarding if they bounce/move) as quickly
+              as
+              possible.
+              The system utilized optical, ferromagnetic and reflective sensors to detect and classify parts.
+              The system also uses a DC motor to control the conveyor belt, and a stepper motor to rotate the sorting
+              bins.
+              I wrote the program to run the system efficiently, and my partner looked after the hardware interfacing to
+              each part. Through testing, we were able to successfully
+              sort all 48 parts in 32 seconds, which would place us in the top 3 teams for run time.</p>
+            <div class="links-container" id="links-container3">
+              <div class="">
+                <div class="links-inner">
+                  <a href="https://github.com/brodiegould/Embedded-Sorting-Project" class="square-button"><i
+                      class="fa-brands fa-github"></i> Code</a>
+                </div>
+                <div class="links-inner">
+                  <a href="https://www.youtube.com/shorts/50-gHRf9Evg?&ab_channel=BrodieGould" class="square-button"><i
+                      class="fa-brands fa-youtube"></i> Video 1</a>
+                </div>
+                <div class="links-inner">
+                  <a href="https://www.youtube.com/watch?v=uYpI9D8bxk8&ab_channel=BrodieGould" class="square-button"><i
+                      class="fa-brands fa-youtube"></i> Video 2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- Education -->
+      <div class="body-text" id="education">
+        <h2><i class="fa-solid fa-building-columns"></i> Education.</span></h2>
+        <div class="justify block-words">
+          <h3>Summary of Programming Education and Experience</h3>
+          <ul>
+            <li><b><u>Georgian College</u></b><br>
+              PLC programming, smart relay controls, embedded microcontrollers and 6-axis robotic arms</li>
+            <li><b><u>Camosun College</u></b><br>
+              Exposure to creating programs and algorithms to solve engineering applications in C, C++, R and MATLAB
+            </li>
+            <li><b><u>University of Victoria</u></b><br>
+              Python Cryptography projects, Solidity Smart Contract, Capstone Mobile App Development, embedded
+              microcontroller programming projects and MATLAB applications and functions for numerical analysis </li>
+            <li><b><u>Self Directed</u></b><br>
+              Online full-stack web dev course covering HTML, CSS, Bootstrap, Javascript, and an Online Python course
+            </li>
+
+          </ul>
+        </div>
       </div>
     </div>
 
-    <!-- Education -->
-    <div class="body-text" id="education">
-      <h2><i class="fa-solid fa-building-columns"></i> Education.</span></h2>
-      <div class="justify block-words">
-        <h3>Summary of Programming Education and Experience</h3>
-        <ul>
-          <li><b><u>Georgian College</u></b><br>
-            PLC programming, smart relay controls, embedded microcontrollers and 6-axis robotic arms</li>
-          <li><b><u>Camosun College</u></b><br>
-            Exposure to creating programs and algorithms to solve engineering applications in C, C++, R and MATLAB</li>
-          <li><b><u>University of Victoria</u></b><br>
-            Python Cryptography projects, embedded microcontroller programming projects and MATLAB applications and functions for numerical analysis </li>
-          <li><b><u>Self Directed</u></b><br>
-            Online full-stack web dev course covering HTML, CSS, Bootstrap, Javascript</li>
-        </ul>
+      <!-- Experience -->
+      <div class="body-text" id="experience">
+        <h2><i class="fa-solid fa-briefcase"></i> Experience.</span></h2>
+        While I encourage you to look at some of my past projects, I would also like to mention my background that got
+        me
+        here.
+        <div class="justify block-words">
+          <h3>Summary of Past Work Experience</h3>
+          <ul>
+            <li><b><u>Engineering - Software</u></b></li>
+            software design expreience creating a cybersecurity proof of concept on an AWS instance using Docker, Bash
+            and
+            Open-Source software
+            <li><b><u>Engineering - Consulting</u></b><br>
+              consulting experience creating design drawings and project documents to direct contractors through
+              construction in Vancouvers ports, pump stations, energy recycling and water services industry. Help
+              organizations bid on projects and
+              analyze costs in a project management domain</span></li>
+            <li><b><u>Engineering - Manufacturing</u></b><br>
+              automation experience covering PLC programming, robotics programming, sensing systems and control schemes
+            </li>
+            <li><b><u>Engineering - Hands-on</u></b><br>
+              new building construction, automotive repairs, panel construction and residential/commercial electrical
+              works </li>
+            <li><b><u>Engineering - Design </u></b><br>
+              create instruction CAD drawings from site plans to full detail and specs, create automation projects, and
+              panel designs </li>
+            <li><b><u>Services</u></b><br>
+              bartending, frontlines role in a deli shop, support and supervisory roles at the golf course, watercraft
+              rentals and private event operator </li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <!-- Experience -->
-    <div class="body-text" id="experience">
-      <h2><i class="fa-solid fa-briefcase"></i> Experience.</span></h2>
-      While I encourage you to look at some of my past projects, I would also like to mention my background that got me here.
-      <div class="justify block-words">
-        <h3>Summary of Past Work Experience</h3>
-        <ul>
-          <li><b><u>Engineering - Consulting</u></b><br>
-            consulting experience creating design drawings and project documents to direct contractors through construction in Vancouvers ports, pump stations, energy recycling and water services industry. Help organizations bid on projects and
-            analyze costs in a project management domain</span></li>
-          <li><b><u>Engineering - Manufacturing</u></b><br>
-            automation experience covering PLC programming, robotics programming, sensing systems and control schemes </li>
-          <li><b><u>Engineering - Hands-on</u></b><br>
-            new building construction, automotive repairs, panel construction and residential/commercial electrical works </li>
-          <li><b><u>Engineering - Design </u></b><br>
-            create instruction CAD drawings from site plans to full detail and specs, create automation projects, and panel designs </li>
-          <li><b><u>Servies</u></b><br>
-            bartending, frontlines role in a deli shop, support and supervisory roles at the golf course, watercraft rentals and private event operator </li>
-        </ul>
-      </div>
-    </div>
 
-    <!-- Reading List -->
-    <div class="body-text" id="reading-list">
-      <h2><i class="fa-solid fa-book"></i> Reading List.</span></h2>
-      <p>I believe that if you want to get to know someone, look at their bookshelves.</p>
-      <table class="reading-table">
-        <!-- New Table Row -->
-        <tr class="reading-table-row">
-          <td>
-            <p><b><u>Mastery</u></b></p>
-            <p>by Robert Greene</p>
-            <span class="interests-badge to-read">To Read</span>
-          </td>
-          <td>
-            <p><b><u>Deep Work</u></b></p>
-            <p>by Cal Newport</p>
-            <span class="interests-badge to-read">To Read</span>
-          </td>
-          <td>
-            <p><b><u>The Basics of Bitcoins and Blockchains</u></b></p>
-            <p>by Anthony Lewis</p>
-            <span class="interests-badge reading">Reading</span>
-          </td>
-        <tr class="reading-table-row">
-          <td>
-            <p><b><u>Cracking the Coding Interview: Data Structures and Algorithms</u></b></p>
-            <p>by Gayle Laakmann McDowell</p>
-            <span class="interests-badge reading">Reading</span>
-          </td>
-          <td>
-            <p><b><u>How to Fail at Almost Everything and Still Win Big</u></b></p>
-            <p>by Scott Adams</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>The Psychology of Money</u></b></p>
-            <p>by Morgan Housel</p>
-            <span class="interests-badge read">Read</span>
-          </td>
+
+      <!-- Reading List -->
+      <div class="body-text" id="reading-list">
+        <h2><i class="fa-solid fa-book"></i> Reading List.</span></h2>
+        <p>I believe that if you want to get to know someone, look at their bookshelves.</p>
+        <table class="reading-table">
           <!-- New Table Row -->
-        <tr class="reading-table-row">
-          <td>
-            <p><b><u>Poor Charlie's Almanack</u></b></p>
-            <p>by Charlie Munger</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>the Almanack of Naval Ravikant</u></b></p>
-            <p>by Eric Jorgenson</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>Why we Sleep</u></b></p>
-            <p>by Matthew Walker</p>
-            <span class="interests-badge read">Read</span>
-          </td>
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>Deep Work</u></b></p>
+              <p>by Cal Newport</p>
+              <span class="interests-badge to-read"> To Read</span>
+            </td>
+            <td>
+              <p><b><u>Factfulness</u></b></p>
+              <p>by Hans Rosling</p>
+              <span class="interests-badge reading">Reading</span>
+            </td>
+            <td>
+              <p><b><u>The Basics of Bitcoins and Blockchains</u></b></p>
+              <p>by Anthony Lewis</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>Cracking the Coding Interview: Data Structures and Algorithms</u></b></p>
+              <p>by Gayle Laakmann McDowell</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>How to Fail at Almost Everything and Still Win Big</u></b></p>
+              <p>by Scott Adams</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>The Psychology of Money</u></b></p>
+              <p>by Morgan Housel</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <!-- New Table Row -->
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>Poor Charlie's Almanack</u></b></p>
+              <p>by Charlie Munger</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>the Almanack of Naval Ravikant</u></b></p>
+              <p>by Eric Jorgenson</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Why we Sleep</u></b></p>
+              <p>by Matthew Walker</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <!-- New Table Row -->
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>In Defense of Food</u></b></p>
+              <p>by Michael Pollan</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Principles</u></b></p>
+              <p>by Ray Dalio</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>the 4 Hour Chef</u></b></p>
+              <p>by Tim Ferriss</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+          </tr>
           <!-- New Table Row -->
-        <tr class="reading-table-row">
-          <td>
-            <p><b><u>In Defense of Food</u></b></p>
-            <p>by Michael Pollan</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>Principles</u></b></p>
-            <p>by Ray Dalio</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>the 4 Hour Chef</u></b></p>
-            <p>by Tim Ferriss</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-        </tr>
-        <!-- New Table Row -->
-        <tr class="reading-table-row">
-          <td>
-            <p><b><u>Sapiens</u></b></p>
-            <p>by Yuval Noah Harari</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>Stumbling on Happiness</u></b></p>
-            <p>by Daniel Gilbert</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>Get Rich with Options</u></b></p>
-            <p>by Lee Lowell & John Haag</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-        </tr>
-        <!-- New Table Row -->
-        <tr class="reading-table-row">
-          <td>
-            <p><b><u>Stock and Options Trading for Life</u></b></p>
-            <p>by Russ Mathews</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>Tools of Titans</u></b></p>
-            <p>by Tim Ferriss</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>How to Win Friends and Influence People</u></b></p>
-            <p>by Dale Carnagie</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-        </tr>
-        <!-- New Table Row -->
-        <tr class="reading-table-row">
-          <td>
-            <p><b><u>Modern Fundamentals of Golf</u></b></p>
-            <p>by Ben Hogan</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>Rich Dad Poor Dad</u></b></p>
-            <p>by Robert Kiyosaki</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-          <td>
-            <p><b><u>12 Rules for Life</u></b></p>
-            <p>by Jordan Peterson</p>
-            <span class="interests-badge read">Read</span>
-          </td>
-        </tr>
-      </table>
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>Sapiens</u></b></p>
+              <p>by Yuval Noah Harari</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Stumbling on Happiness</u></b></p>
+              <p>by Daniel Gilbert</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Get Rich with Options</u></b></p>
+              <p>by Lee Lowell & John Haag</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+          </tr>
+          <!-- New Table Row -->
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>Stock and Options Trading for Life</u></b></p>
+              <p>by Russ Mathews</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Tools of Titans</u></b></p>
+              <p>by Tim Ferriss</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>How to Win Friends and Influence People</u></b></p>
+              <p>by Dale Carnagie</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+          </tr>
+          <!-- New Table Row -->
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>Modern Fundamentals of Golf</u></b></p>
+              <p>by Ben Hogan</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Rich Dad Poor Dad</u></b></p>
+              <p>by Robert Kiyosaki</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Gut</u></b></p>
+              <p>by Giulia Enders</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+          </tr>
+          <!-- New Table Row -->
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>1984</u></b></p>
+              <p>by George Orwell</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Vagabonding</u></b></p>
+              <p>by Rolf Potts</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>The Thorn Birds</u></b></p>
+              <p>by Colleen McCullough</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+          </tr>
+          <!-- New Table Row -->
+          <tr class="reading-table-row">
+            <td>
+              <p><b><u>IT</u></b></p>
+              <p>by Stephen King</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Fahrenheit 451</u></b></p>
+              <p>by Ray Bradbury</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+            <td>
+              <p><b><u>Where the Crawdads Sing</u></b></p>
+              <p>by Delia Owens</p>
+              <span class="interests-badge read">Read</span>
+            </td>
+          </tr>
+        </table>
+
+      </div>
 
     </div>
-
-  </div>
 </body>
 
 </html>
